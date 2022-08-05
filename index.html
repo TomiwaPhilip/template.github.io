@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Section for meta tags-->
+        <meta charset="UTF-8">
+        <meta name="keywords" content="TP Architect">
+        <meta name="description" content="TP Architect Website">
+        <meta name="author" content="Tomiwa-Philip">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Stylesheet and libraries here-->
+        <link rel="stylesheet" href="style/w3.css">
+        <link rel="stylesheet" href="Font awesome/fontawesome/css/all.css">
+        <script src="script/w3.js"></script>
+        <!--The title goes here-->
+        <title>TP Architect</title>
+        <style>
+             body {
+                    background-image: url('images/architect.jpg');
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-size: cover;
+                }
+            #bar {
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <!---The Body here-->
+    <body>
+        <!--The nav bar-->
+        <div class="w3-bar w3-mobile w3-white w3-card w3-top w3-animate-opacity">
+            <a href="index.html" class="w3-bar-item w3-button w3-xlarge w3-black w3-hover-blue .w3-mydes"><i class="fa-solid fa-home"></i> <strong>TP</strong>  Architect </a>
+            <a href="javascript:void(0)" class="w3-hide-medium w3-bar-item w3-hide-large w3-black w3-right w3-button w3-xlarge w3-hover-blue" onclick="Show()"><i class="fa-solid fa-bars"></i></a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-right w3-mobile w3-xlarge w3-hover-blue w3-hide-small">Contact</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-right w3-mobile w3-xlarge w3-hover-blue w3-hide-small"> About</a>
+            <a href="project.html" class="w3-bar-item w3-button w3-right w3-mobile w3-xlarge w3-hover-blue w3-hide-small">Projects</a>
+        </div>
+        <!--Nav bar for smaller screens-->
+        <div class="w3-bar w3-mobile w3-white w3-hide w3-top w3-animate-opacity" id="bar">
+            <a href="project.html" class="w3-bar-item w3-button w3-right w3-mobile w3-large w3-hover-blue">Projects</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-right w3-mobile w3-large w3-hover-blue"> About</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-right w3-mobile w3-large w3-hover-blue">Contact</a>
+        </div>
+        
+        <!---Make the page content-->
+        <div class="w3-padding w3-display-middle w3-center">
+           <p class="w3-jumbo"><span class="w3-black w3-opacity w3-padding w3-animate-left">TP</span> <span class="w3-animate-right">Architect</span></p>
+           <p class="w3-text-white w3-animate-zoom">We are the home of incredible buildings...</p>
+           <a href="project.html" class="w3-button w3-black w3-hover-blue w3-animate-bottom">Learn More...</a>
+        </div>
+    </body>
+    <script>
+        function Show() {
+            var x = document.getElementById("bar");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</html>
